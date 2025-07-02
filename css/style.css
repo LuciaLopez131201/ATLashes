@@ -1,0 +1,90 @@
+/*
+CSS:
+
+selector/etiqueta{
+  propiedad: valor
+}
+
+
+*/
+
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: 0;
+  background-color: rgba(248, 218, 227, 0.801)
+
+}
+
+a{
+  font-style: none;
+  text-decoration: none;
+}
+
+li { list-style: none;}
+
+h1{
+  color: rgb(101, 129, 129)
+  ; font-style: oblique;
+  font-family: "Lora", serif;
+  
+} /* inicio y nombre de la pagina*/
+
+h2{
+  color: rgb(245, 155, 210); font-style: oblique; font-size: larger;
+}
+
+p{
+  color: rgb(43, 42, 42);
+} /*slogan*/
+
+div p
+{color: black;} 
+/*texto*/
+
+#body { 
+
+}
+
+#main{
+  text-align: center;
+
+}
+
+
+#heder{
+display: flex;
+
+
+
+}
+
+#nav{
+  display: flex;
+  background-color: ghostwhite
+  
+
+}
+
+#nav ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav li{
+  margin: 0 15px;
+  background-color: ghostwhite;
+  
+  
+  
+}
+
+#nav a{
+  color: palevioletred;
+  text-decoration: none;
+  display: block;
+}
+
+
