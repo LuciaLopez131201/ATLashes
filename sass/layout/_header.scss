@@ -1,0 +1,61 @@
+
+h1{
+  color: rgb(101, 129, 129)
+  ; font-style: oblique;
+  font-family: "Lora", serif;
+  
+} /* inicio y nombre de la pagina*/
+
+h2{
+  color: rgb(245, 155, 210); font-style: oblique; font-size: larger;
+}
+
+p{
+  color: rgb(43, 42, 42);
+} /*slogan*/
+
+div p
+{color: black;} 
+/*texto*/
+
+#header{
+  grid-area: header;
+  margin-bottom: 0;
+  padding: 10px 0;
+
+
+
+
+}
+
+#nav{
+  grid-area: nav ;
+  display: flex;
+  background-color: ghostwhite
+  
+
+}
+
+#nav ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav li{
+  margin: 0 15px;
+  background-color: ghostwhite;
+  
+  
+  
+}
+
+#nav a{
+  color: rgb(230, 140, 218);
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: large;
+}

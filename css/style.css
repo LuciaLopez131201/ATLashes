@@ -7,104 +7,86 @@ selector/etiqueta{
 
 
 */
-
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
-  
-
 }
 
-a{
+a {
   font-style: none;
   text-decoration: none;
 }
 
-li { list-style: none;}
-
-h1{
-  color: rgb(101, 129, 129)
-  ; font-style: oblique;
-  font-family: "Lora", serif;
-  
-} /* inicio y nombre de la pagina*/
-
-h2{
-  color: rgb(245, 155, 210); font-style: oblique; font-size: larger;
+li {
+  list-style: none;
 }
 
-p{
+h1 {
+  color: rgb(101, 129, 129);
+  font-style: oblique;
+  font-family: "Lora", serif;
+} /* inicio y nombre de la pagina*/
+h2 {
+  color: rgb(245, 155, 210);
+  font-style: oblique;
+  font-size: larger;
+}
+
+p {
   color: rgb(43, 42, 42);
 } /*slogan*/
+div p {
+  color: black;
+}
 
-div p
-{color: black;} 
 /*texto*/
-
-#body { 
+#body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: ghostwhite;
-display:grid;
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr;
+  grid-template-rows: auto 2fr 1fr;
+  grid-template-areas: "header   header   nav" "main    main     section" "footer  footer   section";
+  column-gap: 20px;
+  row-gap: 30px;
+}
 
-  grid-template-columns: 300px 1fr 1fr ;
-  grid-template-rows: auto 2fr 1fr ;
-  grid-template-areas: 
-          /*COL1    COL2      COL3*/
-  /*ROW1*/ "header   header   nav"
-  /*ROW2*/  "main    main     section"
-  /*ROW3*/  "footer  footer   section" 
-  ;
-column-gap: 20px;
-row-gap: 30px; }
-
-#main{
+#main {
   max-width: 1200px;
   grid-area: main;
-
   text-align: center;
   margin: 10px;
   margin-top: 0;
   padding-top: 20px;
-
 }
 
-
-#header{
+#header {
   grid-area: header;
   margin-bottom: 0;
   padding: 10px 0;
-
-
-
-
 }
 
-#nav{
-  grid-area: nav ;
+#nav {
+  grid-area: nav;
   display: flex;
-  background-color: ghostwhite
-  
-
+  background-color: ghostwhite;
 }
 
-#nav ul{
+#nav ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#nav li{
+#nav li {
   margin: 0 15px;
   background-color: ghostwhite;
-  
-  
-  
 }
 
-#nav a{
+#nav a {
   color: rgb(230, 140, 218);
   text-decoration: none;
   display: block;
@@ -113,9 +95,9 @@ row-gap: 30px; }
   font-size: large;
 }
 
-.box-model{
+.box-model {
   grid-area: section;
-border: 2px ;
+  border: 2px;
   width: 300px;
   height: 200px;
   padding-left: 50px;
@@ -124,7 +106,6 @@ border: 2px ;
   padding-top: 40px;
   background-color: rgb(250, 215, 244);
   overflow: auto;
-
 }
 
 .imagenes {
@@ -144,64 +125,45 @@ border: 2px ;
 }
 
 #footer {
-  grid-area: footer ;
+  grid-area: footer;
 }
-
-
 
 @media screen and (max-width: 900px) {
-  #body{
-  grid-template-columns: 100px 1fr  ;
-  grid-template-rows: auto auto auto auto auto  ;
-  grid-template-areas: 
-           /*COL1    COL2 */
-  /*ROW1*/ "header   header "
-  /*ROW2*/  "nav     section   "
-  /*ROW3*/  "main    section " 
-  /*ROW4*/  "main    main "
-  /*ROW5*/  "footer  footer "
-  ;
-
+  #body {
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header   header " "nav     section   " "main    section " "main    main " "footer  footer ";
   }
 }
-
 @media screen and (max-width: 600px) {
-  #body{
-        grid-template-columns: 0.5fr 1fr  ;
-  grid-template-rows: auto auto auto auto auto ;
-  grid-template-areas: 
-           /*COL1 */
-  /*ROW1*/ "header "
-  /*ROW2*/  "nav  "
-  /*ROW3*/  "main " 
-  /*ROW4*/  "main "
-  /*ROW5*/  "footer "  }
-
+  #body {
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header " "nav  " "main " "main " "footer ";
+  }
 }
-
 /*Promociones ajuste de carrusel*/
-
 #carouselExampleIndicators {
-  max-width: 600px;  /* o el ancho que prefieras */
-  margin: 0 auto;    /* para centrarlo */
+  max-width: 600px; /* o el ancho que prefieras */
+  margin: 0 auto; /* para centrarlo */
 }
 
 /*Contacto*/
-.Parrafo_contacto{
-  color: black
-  ; font-style: oblique;
-  
-
+.Parrafo_contacto {
+  color: black;
+  font-style: oblique;
 }
 
 /*Acoordeon*/
 .accordion .accordion-button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
 }
 
 .accordion .accordion-body {
-    padding: 0.5rem 1rem;
-    font-size: 0.95rem;
-    line-height: 1.4;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
+
+/*# sourceMappingURL=style.css.map */
