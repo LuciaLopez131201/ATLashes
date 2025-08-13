@@ -19,7 +19,6 @@ div p
 /*texto*/
 
 #header{
-  grid-area: header;
   margin-bottom: 0;
   padding: 10px 0;
 
@@ -36,12 +35,36 @@ div p
 
 }
 
+.text-pink {
+  color: rgb(230, 140, 218) !important;
+  font-weight: bold;
+}
+
+
+
+
+
+/* Barra de navegación superior */
+.navbar-custom {
+  background-color: ghostwhite !important;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Panel desplegable del menú hamburguesa */
+.custom-menu {
+  background-color: ghostwhite;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
 #nav ul{
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 
 #nav li{
   margin: 0 15px;

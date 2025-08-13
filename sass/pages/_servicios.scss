@@ -9,3 +9,67 @@
     font-size: 0.95rem;
     line-height: 1.4;
 }
+
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1 1 300px; 
+    max-width: 100%;
+}
+
+/* Título principal del sitio */
+main h1 {
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+/* Media Query para pantallas (≥1500px) */
+@media (min-width: 1500px) {
+    .container .row {
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 1 1 30%;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+}
+}
+
+/* Media Query para pantallas (≤900px) */
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 45%;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Media Query para pantallas (≤600px) */
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+}
